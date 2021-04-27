@@ -12,14 +12,23 @@ function toPhonetic(num){
     ToString.push(item.toString().split(''))
   });
 
+  let print='';
+  let i = 0;
+  let j = 0;
 
+  for(i = 0 ; i < ToString.length; i++){
+    for(j = 0 ; j < ToString[i].length; j++){
 
+      let n = ToString[i][j];
+      print = print + phonetics[n];
+    }
+    print = print + ',';
+  }
+  console.log(print)
 
 }
 
-
-
-
+//Propts user
 readline.question(`enter integers?`, numbers => {
  let arr =  numbers.split(' ');
 
