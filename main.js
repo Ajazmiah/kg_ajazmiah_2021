@@ -4,12 +4,25 @@ const readline = require('readline').createInterface({
   output: process.stdout
 })
 
+function toPhonetic(num){
+  let phonetics = ['Zero','one','Two','Three','Four','Five','Six','Seven','Eight','Nine'];
+  let ToString = [];
+
+  num.forEach((item, i) => {
+    ToString.push(item.toString().split(''))
+  });
+
+
+
+
+}
+
 
 
 
 readline.question(`enter integers?`, numbers => {
  let arr =  numbers.split(' ');
 
-  console.log(arr)
+ toPhonetic(arr)
   readline.close()
 })
