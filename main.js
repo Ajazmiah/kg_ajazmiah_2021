@@ -18,6 +18,19 @@ function toPhonetic(num){
 
   for(i = 0 ; i < ToString.length; i++){
     for(j = 0 ; j < ToString[i].length; j++){
+ feature-b
+ HEAD
+
+ main
+
+      let n = ToString[i][j];
+      print = print + phonetics[n];
+    }
+    print = print + ',';
+  }
+  console.log(print)
+ feature-b
+ e4a9eda53e5fbd7b2a6cffd8fc786329ab46715b
 
       let n = ToString[i][j];
       print = print + phonetics[n];
@@ -26,12 +39,11 @@ function toPhonetic(num){
   }
   console.log(print)
 
+ main
 
 }
 
-
-
-
+//Propts user
 readline.question(`enter integers?`, numbers => {
  let arr =  numbers.split(' ');
 
