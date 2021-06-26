@@ -18,6 +18,16 @@ function toPhonetic(num){
 
   for(i = 0 ; i < ToString.length; i++){
     for(j = 0 ; j < ToString[i].length; j++){
+<<<<<<< HEAD
+=======
+
+      let n = ToString[i][j];
+      print = print + phonetics[n];
+    }
+    print = print + ',';
+  }
+  console.log(print)
+>>>>>>> e4a9eda53e5fbd7b2a6cffd8fc786329ab46715b
 
       let n = ToString[i][j];
       print = print + phonetics[n];
